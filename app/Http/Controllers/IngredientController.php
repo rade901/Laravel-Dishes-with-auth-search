@@ -84,9 +84,11 @@ class IngredientController extends Controller
      * @param  \App\Models\ingredient  $ingredient
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ingredient $ingredient)
+    public function destroy(ingredient $ingredient,$id)
     {
-        //
+        $ingredient = ingredient::find($id);
+        $ingredient->delete();
+           return redirect('ingredient');
     }
 
 }

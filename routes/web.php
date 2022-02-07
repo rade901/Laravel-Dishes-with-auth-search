@@ -26,3 +26,5 @@ Route::post('/category',[categoryController::class,'store']);
 Route::post('/ingredient',[ingredientController::class,'store']);
 Route::post('/dish_ingredient',[dishIngredientController::class,'store']);
 Route::post('/dish/{id}',[DishController::class,'destroy']); 
+Route::post('/category/{id}',[categoryController::class,'destroy']); 
+Route::post('/ingredient/{id}',[ingredientController::class,'destroy']); 

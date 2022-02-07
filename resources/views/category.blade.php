@@ -51,7 +51,12 @@
               <td>{{Str::title($cat->title)}}</td>  
                <td>{{Str::slug($cat->slug)}}</td>
                <td>{{$cat->created_at->diffForHumans()}}</td>
-               <td>action</td>
+               <td> <form action="category/{{$cat->id}}" method="POST">
+                @csrf
+    
+                <button type="submit" class="btn btn-danger">Delete</button>
+    
+              </form></td>
            @endforeach
           </tr>
         </tbody>
