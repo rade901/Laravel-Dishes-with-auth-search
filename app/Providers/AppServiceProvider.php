@@ -29,7 +29,8 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191);
         Paginator::useBootstrap();
         $charts->register([
-            \App\Charts\DishChart::class
+            \App\Charts\DishChart::class,
+            \App\Charts\UsersChart::class
         ]);
     }
 }

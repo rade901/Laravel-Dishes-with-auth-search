@@ -31,7 +31,7 @@
     </div>
   </div>
   <div class="container pt-5">
-  <h1>Searching Result</h1>
+  <h1>Searching Result...</h1>
     <table class="table">
         <thead>
           <tr>
@@ -81,7 +81,7 @@
   </div>
   @endif
   @if($ingredients->count() > 0)
-    <h1>Searching Result</h1>
+    <h1>Searching Result...</h1>
     <table class="table">
         <thead>
           <tr>
@@ -105,7 +105,7 @@
             @endforeach
             @endif
             @if($category->count() > 0)
-            <h1>Searching Result</h1>
+            <h1>Searching Result...</h1>
            <table class="table">
         <thead>
           <tr>
